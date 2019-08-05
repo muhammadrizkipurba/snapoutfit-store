@@ -16,9 +16,10 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 // Connect to database
+const db = process.env.MONGODB_URI;
 mongoose.Promise = global.Promise;
 mongoose
-  .connect(process.env.MONGODB_URI, { useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true })
+  .connect(db, { useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true })
   .then(() => console.log("Connected to database"))
   .catch(err => console.log(err));
 
