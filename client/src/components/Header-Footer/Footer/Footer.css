@@ -1,0 +1,113 @@
+.footer  {
+    background-color: var(--mainBlack);
+}
+
+hr {
+    border-color: var(--primaryRGBA)!important;
+    padding-bottom: 30px;
+}
+
+.footer-title {
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-style: none;
+    margin-bottom: 5px;
+}
+
+li {
+    font-size: 14px;
+    padding: 4px;
+    display: flex;
+}
+
+.icons{
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    margin-top: 20px;
+}
+
+li .links {
+    text-decoration: none;
+    transition: var(--mainTransition)
+}
+
+li .links:hover {
+    transform: scale(1.2);
+    color: white
+}
+
+p {
+    font-size: 14px
+}
+
+form .footer-button {
+    background-color: #a10101 !important;
+    color: white !important;
+    transition: all 0.3s ease-in-out !important;
+    padding: 6px 18px !important;
+    border-radius: 10px !important
+}
+form .footer-button:hover {
+    background-color: #e90000 !important;
+    border-radius: 5px !important
+}
+
+footer .logo {
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 11px 0px;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+footer .wrapper {
+    display: flex;
+    color: #828282;
+}
+
+footer .left,
+footer .right {
+    flex: 1;
+}
+
+footer .business_nfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .business_nfo .tag {
+    flex-grow: 1;
+    position: relative;
+    width: 50%;
+    margin-bottom: 30px;
+}
+footer .business_nfo .icon {
+    position: absolute;
+    font-size: 26px;
+    top: 10px;
+}
+footer .business_nfo .nfo {
+    padding-left: 40px;
+}
+
+.social-media .social-media-logo a img {
+    height: 50px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: var(--mainTransition);
+}
+
+.social-media .social-media-logo a img:hover {
+    transform: scale(1.1);
+    -webkit-filter:none; /* Safari 6.0 - 9.0 */
+  filter: none;
+}

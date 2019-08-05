@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            font-family: "Poppins", sans-serif;
+            padding: 0px 5px;
+            height: 100%;
+        }
+        
+        .header h1 {
+            color: white;
+            text-shadow: 2px 2px 2px rgba(160, 160, 160, 0.7);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            top: 50px;
+            letter-spacing: 15px;
+        }
+        
+        .header hr {
+            position: relative;
+            z-index: 1;
+            top: 50px;
+            color: rgba(255, 255, 255, 0.5);
+            width: 35%
+        }
+        
+        .jumbotron {
+            background: url("https://images.unsplash.com/photo-1495968283540-e1df41995ba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80") center no-repeat;
+            background-size: cover;
+            min-height: 500px;
+            margin-top: -80px;
+            position: relative;
+            text-align: center;
+        }
+        
+        .jumbotron h2 {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding-top: 13%;
+            font-size: 35px;
+            font-weight: 400;
+            text-shadow: 2px 2px 2px rgba(160, 160, 160, 0.7);
+            text-transform: capitalize;
+            margin-bottom: 0px;
+        }
+        
+        .socialmedia ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin-left: 15%;
+            position: relative;
+            z-index: 1;
+            top: -60px;
+        }
+        
+        .socialmedia ul li span {
+            height: 100%;
+            margin-left: 5px;
+            position: relative;
+            top: -10px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(160, 160, 160, 0.7);
+        }
+        
+        .socialmedia ul li img {
+            height: 30px;
+            color: white!important;
+        }
+        
+        .jumbotron a {
+            position: relative;
+            z-index: 1;
+            background-color: #0b4de6;
+            color: white;
+            text-decoration: none;
+            padding: 10px 50px;
+            border-radius: 20px;
+            text-align: center;
+            top: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .jumbotron a:hover {
+            background-color: #052d8d;
+            font-weight: 500;
+        }
+        
+        .jumbotron p {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            font-weight: 400;
+            text-shadow: 2px 2px 3px rgba(138, 138, 138, 0.7);
+            text-transform: capitalize;
+            font-size: 27px;
+            margin : 0;
+        }
+        
+        
+        .jumbotron::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.4))
+        }
+        
+        .mail-body {
+            text-align: center;
+            position: relative;
+            top: -70px;
+            background-color: #cecbcb;
+            padding: 20px 20px ;
+        }
+        
+        .mail-body h2 {
+            display: block;
+            font-weight: 700;
+        }
+        
+        .mail-body .message {
+            text-align: center
+        }
+        
+        .footer {
+            background-color: #313131;
+            position: relative;
+            z-index: 0;
+            height: 55px;
+            top: -85px
+        }
+        
+        .footer .contact ul {
+            font-size: 16px;
+            display:flex;
+            color: white;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            margin-left: 15%;
+            padding-top: 15px;
+        }
+        
+        .footer i {
+            padding-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SNAPOUTFIT STORE</h1>
+        <hr>
+    </div>
+    <div class="jumbotron">
+        <h2>Hi Muhammad Rizki Purba</h2>
+        <p>Welcome to our store</p>
+        <a target="_blank" href="http://localhost:3000/signin">Sign in now</a>
+    </div>
+    
+    <div class="socialmedia">
+        <ul>
+            <li>
+                <img 
+                    src="https://image.flaticon.com/icons/png/512/174/174855.png"
+                    alt="instagram"
+                >
+                    <span>snapoutfitstore</span>
+            </li>
+            <li>
+                <img        
+                    src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png"
+                    alt="facebook"
+                >
+                    <span>snapoutfitstore_id</span>
+            </li>
+            <li>
+                <img 
+                    src="https://cdn1.iconfinder.com/data/icons/new_twitter_icon/491/bird_twitter_new_single.png"
+                    alt="twitter"
+                >
+                    <span>@snapoutfit_id</span>
+            </li>
+            <li>
+                <img 
+                    src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/youtube-512.png"
+                    alt="youtube"
+                >
+                    <span>Snapoutfit Store</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mail-body">
+        <h2>CONGRATULATIONS !</h2>
+        <p>email&ensp;: muhammadrizkipurba7@gmail.com</p>   
+        <h5>Your email has been registered as a new member in the Snapoutfit Store.
+            <p>
+                Your account will be automatically
+                verified and you can immediately use your account to shop at the snapoutfit store.
+            </p>
+            <p class="message">
+                Click sign in button above or back to Sign in page to continue shopping
+            </p>
+            <p class="message">
+                If there are obstacles in terms of purchasing or payment, you can immediately contact our customer service
+                contact listed in the closing section of this email.
+            </p> 
+        </h5>
+        <h2>Thank you and Happy Shopping ! &#x1F60A;</h2>
+    </div>
+    
+    <div class="footer">
+            <div class="contact">
+                <ul>
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <span>021 - 2887541</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <span>snapoutfit.store.id@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-globe"></i>
+                        <span>www.snapoutfitstore.herokuapp.com</span>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
