@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const cloudinary = require("cloudinary");
-const path = required("path");
+const path = require("path");
 
 // Import Routes
 const userRoute = require("./api/routes/user")
