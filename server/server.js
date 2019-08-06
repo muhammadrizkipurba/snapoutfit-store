@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const cloudinary = require("cloudinary");
+const path = required("path");
 
 // Import Routes
 const userRoute = require("./api/routes/user")
@@ -48,8 +49,6 @@ app.use("/site", siteRoute);
 
 // Default Routes
 if(process.env.NODE_ENV === 'production' ) {
-  const path = required('path');
-
   app.get('/*', (req,res) => {
     res.sendfile(path.resolve(__dirname, '../client', 'build', 'index.html'))
   })
