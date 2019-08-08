@@ -3,7 +3,7 @@ import user from './user_reducer';
 import products from './product_reducers';
 import site from './site_reducer'
 
-const  rootReducer = combineReducers({
+const rootReducer = combineReducers({
     user,
     products,
     site
