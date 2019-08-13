@@ -27,7 +27,7 @@ mongoose
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); 
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'client/build')))
+app.use(express.static('client/build'));
 
 // CLOUDINARY CONFIG
 cloudinary.config({
@@ -39,7 +39,7 @@ cloudinary.config({
 // Use Routes
 
 app.get('/', (req,res) => {
-  res.send(`<h1>API running from Heroku on port ${port} </h1>`)
+  res.send(`<h1>Snapoutfit Store API running from Heroku on port ${port} </h1>`)
 })
 app.use("/user", userRoute);
 app.use("/product", productRoute);
