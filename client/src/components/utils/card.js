@@ -65,23 +65,23 @@ class Card extends Component {
                                     props.user.userData.isAuth ?
                                         this.props.dispatch(addToCart(props._id))
                                         : setTimeout(() => {
-                                            this.props.history.push('/signin')
-                                        }, 0);
-                                        Swal.fire({
-                                            imageUrl: "https://www.shareicon.net/data/256x256/2015/11/16/170905_exit_256x256.png",
-                                            imageAlt: "Access Denied",
-                                            imageHeight: "70px",
-                                            padding: "20px",
-                                            background: "#ded9d9",
-                                            backdrop: "rgba(0, 0, 0, 0.8)",
-                                            title: "Oopss..",
-                                            html:
-                                                '<h5 class="font-weight-bold pt-4 text-dark">You must sign in to access the page</h5>' +
-                                                '<p class="pt-2">Click OK to continue Sign In</p>',
-                                            showConfirmButton: true,
-                                            confirmButtonColor: "#1d8222",
-                                            confirmButtonClass: "mt-0 mb-2"
-                                        });
+                                            this.props.history.push('/signin');
+                                            Swal.fire({
+                                                imageUrl: "https://www.shareicon.net/data/256x256/2015/11/16/170905_exit_256x256.png",
+                                                imageAlt: "Access Denied",
+                                                imageHeight: "70px",
+                                                padding: "20px",
+                                                background: "#ded9d9",
+                                                backdrop: "rgba(0, 0, 0, 0.8)",
+                                                title: "Oopss..",
+                                                html:
+                                                    '<h5 class="font-weight-bold pt-4 text-dark">You must sign in to access the page</h5>' +
+                                                    '<p class="pt-2">Click OK to continue Sign In</p>',
+                                                showConfirmButton: true,
+                                                confirmButtonColor: "#1d8222",
+                                                confirmButtonClass: "mt-0 mb-2"
+                                            });
+                                        }, 200);
                                 }}
                             />
                         </div> 
