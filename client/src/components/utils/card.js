@@ -81,7 +81,7 @@ class Card extends Component {
                                                 confirmButtonColor: "#1d8222",
                                                 confirmButtonClass: "mt-0 mb-2"
                                             });
-                                        }, 200);
+                                        }, 100);
                                 }}
                             />
                         </div> 
